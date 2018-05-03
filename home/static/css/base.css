@@ -1,0 +1,733 @@
+/* http://www.vincent-rousseau.net/content/caler-le-footer-en-bas-de-l%C3%A9cran-quelque-soit-le-contenu */
+
+html, body {
+    height: 100%
+}
+
+#wrap {
+    min-height: 95%
+}
+
+#content {
+    overflow:auto;
+    padding-bottom: 150px
+}
+
+#footer {
+    position: relative;
+    clear:both;
+    margin-top: -150px;
+    height: 150px;
+}
+
+h1,h2,h3 {
+    text-align: center;
+}
+
+form input {
+    display: block;
+    width:150px;
+    padding: 2px;
+}
+
+form label {
+    display: block;
+    width: 150px;
+    float: left;
+    text-align: right;
+    padding: 2px;
+}
+
+#software {
+    margin-top:30px;
+    width:150px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#software label {
+    display: block;
+    float: left;
+    padding: -20px;
+    text-align: left;
+}
+
+#software input {
+    width: auto;
+}
+
+#template_svc {
+    margin-top:30px;
+    width:300px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#template_svc label {
+    display: inline;
+    float: left;
+    padding: -20px;
+    text-align: left;
+}
+
+#template_svc input {
+    width: auto;
+}
+
+#method {
+    margin-top:30px;
+    width:150px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#method label {
+    display: block;
+    float: left;
+    padding: -20px;
+    text-align: left;
+}
+
+#method input {
+    width: auto;
+}
+
+form button {
+   display: block;
+   float: right;
+   width: 150px;
+}
+
+#view {
+    margin-top: 40px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 80%;   
+}
+
+#header ul {
+    margin-left: 20px;
+}
+
+#header a {
+    color:#33CCFF;
+    font-weight:bold;
+}
+
+#nav_logout a {
+    color: green;
+}
+
+#nav_login a {
+    color:green;
+}
+
+#nav_register a {
+    color:green;
+}
+
+#pdb_id {
+    font-weight:bold;
+}
+
+#search {
+    margin-top: 30px;
+    width:150px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#update {
+    margin-top:30px;
+    width:550px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#update textarea {
+    width: 300px;
+}
+
+#update #submit {
+    width: 150px;
+    margin-right: 150px;
+}
+
+#upload {
+    margin-top:20px;
+    width:600px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#upload input {
+    width: 100px;
+}
+
+#upload #submit {
+    margin-right: 150px;
+}
+
+.yes {
+    font-weight:bold;
+    color: green;
+}
+
+.no {
+    color: orange;
+}
+
+#statistics {
+    margin-top:30px;
+    width:550px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#statistics select {
+    width: 150px;
+}
+
+#statistics #submit {
+    margin-right: 150px;
+}
+
+#add_vina {
+    margin-top:30px;
+    width:550px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#add_vina #submit {
+    margin-left: 140px;
+}
+
+#error {
+    margin-top:40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: red;
+    font-weight: bold;
+}
+
+#valid {
+    margin-top:40px;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+
+#register {
+    margin-top: 20px;
+    position: relative;
+    width:550px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#adparameters {
+    margin-top: 20px;
+    position: relative;
+    width:550px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#id_ad_file {
+    width:270px;
+}
+
+#id_parameters_file {
+    width:270px;
+}
+
+#id_results_file {
+    width:270px;
+}
+
+#adp_submit {
+    margin-left: 150px;
+}
+
+#register #submit {
+    margin-right: 150px;
+}
+
+#new_ad {
+    margin-top: 20px;
+    position: relative;
+    width:550px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#new_ad #submit {
+    margin-right: 150px;
+}
+
+#new_ad select {
+    width: 150px;
+}
+
+#new_vina {
+    margin-top: 20px;
+    position: relative;
+    width:550px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#new_vina #submit {
+    margin-right: 150px;
+}
+
+#new_vina select {
+    width: 150px;
+}
+
+#new_ds {
+    margin-top: 20px;
+    position: relative;
+    width:550px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#new_ds #submit {
+    margin-right: 150px;
+}
+
+#new_ds select {
+    width: 150px;
+}
+
+#methodFP {
+    margin-top: 20px;
+    position: relative;
+    width:550px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#methodFP #submit {
+    margin-right: 150px;
+}
+
+#methodFP select {
+    width: 150px;
+}
+
+#methodFP #visibility {
+    margin-left: 150px;
+}
+
+#methodFP label {
+    display: block;
+    float: left;
+    width:275px;
+    padding: 0px;
+    text-align: right;
+}
+
+#new_exp {
+    margin-top: 20px;
+    position: relative;
+    width:550px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#new_exp #submit {
+    margin-right: 150px;
+}
+
+#new_exp select {
+    width: 150px;
+}
+
+#new_exp #visibility {
+    margin-left: 150px;
+}
+
+#id_vina_file {
+    width: 270px;
+}
+
+#id_pdb_file {
+    width: 270px;
+}
+
+.btn-group {
+  display: inherit;
+}
+
+.btn-group > .btn {
+  float: none;
+}
+
+#login {
+    margin-top: 20px;
+    position: relative;
+    width:550px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#login #submit {
+    margin-left: 150px;
+}
+
+#ligcomplete {
+    margin-top: 15px;
+}
+
+#protcomplete {
+    margin-top: 15px;
+}
+
+.choose {
+    margin-bottom: 5px;
+    width:230px;
+    display:inline-block;
+}
+
+canvas {
+    width: 100%;
+    height: 600px;
+}
+
+.spinner {
+    position: relative;
+    padding-left: 50%;
+    margin-top: 50px;
+}
+
+#energy_distribution {
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.all_dockings {
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
+}
+
+.all_exps {
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
+}
+
+.all_ligands {
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
+}
+
+.all_proteins {
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
+}
+
+.all_dockingligands {
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+}
+
+.best_ligands {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
+}
+
+.best_proteins {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
+}
+
+.ranks_sum {
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:75%;
+}
+
+#stats_both {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:700px;
+    height: 700px;
+}
+
+#roc_curve {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:700px;
+    height: 700px;
+}
+
+#clusters {
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:40%;
+}
+
+.search_results {
+    display: block;
+    margin: auto;
+    width:90%;
+    margin-top: 20px;
+}
+
+.my_groups {
+    display: block;
+    margin: auto;
+    width:90%;
+    margin-top: 20px;
+}
+
+.one_group {
+    display: block;
+    margin: auto;
+    width:90%;
+    margin-top: 20px;
+}
+
+.radio {
+    display:inline-block;
+    font-weight: 700;
+    margin-bottom:5px;
+}
+
+#pdb_lig {
+    margin-top: 20px;
+    width:550px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#pdb_lig #submit {
+    margin-right: 150px;
+}
+
+#pubchem_lig {
+    margin-top: 20px;
+    width:550px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#pubchem_lig #submit {
+   margin-right: 150px;
+}
+
+#chembl_lig {
+    margin-top: 20px;
+    width:550px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#chembl_lig #submit {
+   margin-right: 150px;
+}
+
+#join_group {
+    margin-top: 20px;
+    width:550px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#join_group select {
+    width: 150px;
+}
+
+#join_group #submit {
+    margin-right: 150px;
+}
+
+#create_group {
+    margin-top: 20px;
+    width:550px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#create_group #submit {
+   margin-right: 150px;
+}
+
+#manual_lig {
+    margin-top: 20px;
+    width:550px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#manual_lig #submit {
+    margin-right: 150px;
+}
+
+#create_prot {
+    margin-top: 20px;
+    width:550px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#create_prot #submit {
+    margin-right: 150px;
+}
+
+#create_structure {
+    margin-top: 20px;
+    width:550px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#create_structure #submit {
+    margin-right: 150px;
+}
+
+#create_structure select {
+    width: 150px;
+}
+
+#methodlig {
+    margin-top:30px;
+    width:150px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#methodlig label {
+    display: block;
+    float: left;
+    padding: -20px;
+    text-align: left;
+}
+
+#methodlig input {
+    width: auto;
+}
+
+.row {
+    margin-top: 25px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#jumbotron-white {
+    background-color: white;
+}
+
+.jumbotron {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+#best_ligand {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+#carousel {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#carousel img {
+    margin: auto;
+}
+
+#header {
+    margin-bottom: -20px;
+}
+
+#visibility {
+   width:550px;
+}
+
+#visibility label {
+   margin-right: 120px;
+}
+
+#new_vina #visibility {
+    margin-left:150px;
+}
+
+#new_ad #visibility {
+    margin-left:150px;
+}
+
+#new_ds #visibility {
+    margin-left:150px;
+}
+
+.myself {
+    color: #A80000;
+}
+
+.experts {
+    color: #0033FF; 
+}
+
+.guests {
+    color: #00CC33;
+}
+
+#type_q {
+    width: 250px;
+}
+
+#software_q {
+    width: 250px;
+}
+
+
